@@ -26,7 +26,7 @@ export default function Login({ navigation }) {
     const {_id} = response.data;
 
     await AsyncStorage.setItem('user', _id);
-    await AsyncStorage.setItem('techs', xtechs);
+    await AsyncStorage.setItem('techs', techs);
 
     navigation.navigate('List')
   }
@@ -110,5 +110,3 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
-
-//1:04

@@ -20,5 +20,3 @@ function App() {
 }
 
 export default App;
-
-//56:36
