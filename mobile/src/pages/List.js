@@ -11,7 +11,7 @@ export default function List({ navigation }) {
 
   useEffect(() => {
     AsyncStorage.getItem('user').then(user_id => {
-      const socket = socketio('http://192.168.57.138:3333', {
+      const socket = socketio('http://172.16.2.181:3333', {
         query: { user_id }
       })
 
@@ -50,6 +50,7 @@ export default function List({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 20,
     flex: 1,
   },
 
